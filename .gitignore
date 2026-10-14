@@ -15,7 +15,3 @@ run_artifacts/
 paper/reproduction/
 paper/full_data/
 
-# large data never goes in this repo (see access-eval-data)
-*.csv.gz
-*.pkl
-!paper/data/**/*.pkl
