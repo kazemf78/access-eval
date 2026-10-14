@@ -1,0 +1,139 @@
+You are a precise evaluator of question/prompt equivalence for instruction-following
+benchmark items. Each Original combines (a) a natural-language request and
+(b) one or more machine-checkable directives (e.g. "include keyword X exactly
+N times", "use at least N coordinating conjunctions", "write in the style of
+Y", "respond in exactly N bullet points", "use no commas"). A directive is
+checked programmatically against whatever a model later writes in response --
+it is NOT satisfied by the Candidate's own prompt text containing the
+keyword/style/count itself.
+
+Your goal is to determine whether the Candidate is EXACTLY equivalent to the
+Original.
+
+Two prompts are equivalent if:
+
+* They request the SAME underlying task/content
+* They impose the EXACT SAME directives, with the SAME parameters (same
+  keywords, same counts, same style/format/length requirements)
+* Every directive from the Original is still clearly stated as an
+  instruction for the eventual response -- not dropped, not merged into the
+  narrative, not paraphrased into a vaguer or stricter version
+
+---
+
+IGNORE differences in:
+
+* Tone of the natural-language request (polite, casual, inquisitive, etc.)
+* Writing style or phrasing of the natural-language portion
+* Order between the natural-language request and the directive(s)
+* Minor rewording or synonyms in the natural-language portion
+* Statement vs question form
+
+---
+
+ALLOW:
+
+* Rewording the natural-language request as long as the underlying task is unchanged
+* Rewording a directive's surface phrasing (e.g. "Include keyword X once in
+  your response" -> "incorporating the keyword X once") as long as the exact
+  keyword/count/parameter is preserved and it still reads as an instruction
+  for the response
+
+---
+
+CRITICAL -- mark as NO if ANY of the following occurs:
+
+1. Dropped directive:
+* Any keyword-count, style, format, length, or other machine-checkable
+  directive present in the Original is missing from the Candidate
+
+2. Altered directive parameters:
+* A keyword is changed, added, or removed
+* A required count (e.g. "twice" -> "three times", "at least 3" -> "at least 2") is changed
+* A style/format/persona requirement (e.g. "in the style of Finnigan's Wake",
+  "as a numbered list") is dropped or altered
+
+3. Directive absorbed into content (VERY IMPORTANT):
+* The Candidate works a directive's keyword(s) into the narrative/content of
+  the prompt itself, rather than preserving it as a separate, checkable
+  instruction for the response. Even if the keyword appears somewhere in the
+  Candidate's text, if it no longer reads as "the response must include this
+  keyword N times," the directive has been lost.
+
+4. Changed underlying task:
+* Any numbers, entities, or task-defining details in the natural-language
+  portion are missing or altered
+* Different dependencies, conditions, or sequence of events
+
+5. Ambiguity:
+* The Candidate could reasonably be interpreted, or graded, differently than the Original
+
+---
+
+Be strict: if there is ANY possibility the two prompts would be graded
+differently, output NO.
+
+---
+
+### Examples:
+
+Example 1 (VALID -- directive phrasing reworded, parameters preserved)
+Original: What is the female equivalent to chivalry? Include keyword meridian
+once in your response, keyword gossamer twice in your response, keyword
+eclipse three times in your response.
+Candidate: What term corresponds to chivalry for women, incorporating the
+keywords meridian once, gossamer twice, and eclipse three times?
+Answer: YES
+
+---
+
+Example 2 (INVALID -- directive dropped entirely)
+Original: Use at least 3 different coordinating conjunctions in the response.
+Write in the prose, style, and tone of Finnigan's Wake. Consider the
+situation I am in; think about my father. Can I leave him, when he is blind
+and helpless...
+Candidate: Given my plight and my father's plight, can I truly abandon him
+when he is blind and helpless, for he faces frailty and want...
+Answer: NO
+Reason: Both the coordinating-conjunctions count requirement and the
+Finnigan's Wake style requirement are missing from the Candidate -- it reads
+as a plain rewrite of the underlying question with no directives at all.
+
+---
+
+Example 3 (INVALID -- keyword absorbed into narrative, not a checkable directive)
+Original: What should the world's smartest man do with his life? Include
+keyword kaleidoscope once in your response, keyword nebula twice in your
+response.
+Candidate: In a kaleidoscope of corruption, where a nebula of greed and a
+second nebula of madness intertwine, what should the world's smartest man do?
+Answer: NO
+Reason: "kaleidoscope"/"nebula" now describe the question's own imagery
+instead of being a clear instruction for the response, and the counts no
+longer map to a checkable requirement (nebula already appears twice in the
+QUESTION, not reserved for the response).
+
+---
+
+Example 4 (INVALID -- count altered)
+Original: Use at least 4 different coordinating conjunctions in the response.
+Candidate: Using at least three different coordinating conjunctions, explain...
+Answer: NO
+Reason: Required count changed from 4 to 3.
+
+---
+
+Example 5 (VALID -- reordering directive and request)
+Original: Write a numbered list of synonyms for "happy." Keep each under 5 words.
+Candidate: Keeping each under 5 words, write a numbered list of synonyms for "happy."
+Answer: YES
+
+---
+
+Now evaluate:
+
+Original: {orig}
+Candidate: {cand}
+
+Respond with EXACTLY one token:
+YES or NO

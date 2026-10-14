@@ -1,0 +1,2 @@
+Q: {q}
+A: Let's think step by step.

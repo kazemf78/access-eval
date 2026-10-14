@@ -1,0 +1,95 @@
+{
+  "null": {
+    "Qwen/Qwen3-8B": {
+      "n_inquiries": 902,
+      "n_formulations": 6596,
+      "formulation_flip_rate": 0.021831412977562158,
+      "acc_run1": 0.9523281596452328,
+      "acc_run2": 0.9434589800443459,
+      "moved": 0.1164079822616408,
+      "up": 0.06319290465631928,
+      "down": 0.05321507760532151,
+      "canon_flip": 0.019955654101995565,
+      "hidden_share": 0.9142857142857143,
+      "mean_abs_dA_moved": 0.16844671201814057
+    },
+    "Qwen/Qwen3-8B[with_thinking]": {
+      "n_inquiries": 902,
+      "n_formulations": 6596,
+      "formulation_flip_rate": 0.017434808975136447,
+      "acc_run1": 0.9611973392461197,
+      "acc_run2": 0.9634146341463414,
+      "moved": 0.08536585365853659,
+      "up": 0.03325942350332594,
+      "down": 0.052106430155210645,
+      "canon_flip": 0.008869179600886918,
+      "hidden_share": 0.948051948051948,
+      "mean_abs_dA_moved": 0.17368583797155224
+    },
+    "google/gemma-3-4b-it": {
+      "n_inquiries": 902,
+      "n_formulations": 6596,
+      "formulation_flip_rate": 0.02304426925409339,
+      "acc_run1": 0.9201773835920177,
+      "acc_run2": 0.9135254988913526,
+      "moved": 0.11086474501108648,
+      "up": 0.05321507760532151,
+      "down": 0.057649667405764965,
+      "canon_flip": 0.024390243902439025,
+      "hidden_share": 0.91,
+      "mean_abs_dA_moved": 0.17749603174603176
+    },
+    "gpt-4.1-mini": {
+      "n_inquiries": 902,
+      "n_formulations": 6596,
+      "formulation_flip_rate": 0.011825348696179502,
+      "acc_run1": 0.9656319290465631,
+      "acc_run2": 0.9667405764966741,
+      "moved": 0.05543237250554324,
+      "up": 0.02993348115299335,
+      "down": 0.025498891352549888,
+      "canon_flip": 0.009977827050997782,
+      "hidden_share": 0.88,
+      "mean_abs_dA_moved": 0.17753968253968253
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "n_inquiries": 902,
+      "n_formulations": 6596,
+      "formulation_flip_rate": 0.06322013341419042,
+      "acc_run1": 0.8503325942350333,
+      "acc_run2": 0.8880266075388027,
+      "moved": 0.27161862527716185,
+      "up": 0.18625277161862527,
+      "down": 0.08536585365853659,
+      "canon_flip": 0.07760532150776053,
+      "hidden_share": 0.8612244897959184,
+      "mean_abs_dA_moved": 0.18113540654356985
+    }
+  },
+  "rq3_gsm8k_medians": {
+    "popt-GEPA": {
+      "up": 0.0969,
+      "down": 0.1965,
+      "hidden_share": 0.7877,
+      "moved": 0.2934
+    },
+    "popt-MIPROv2": {
+      "up": 0.1219,
+      "down": 0.1421,
+      "hidden_share": 0.8472,
+      "moved": 0.264
+    },
+    "scaling-step": {
+      "up": 0.1341,
+      "down": 0.0521,
+      "hidden_share": 0.8333,
+      "moved": 0.1863
+    },
+    "thinking": {
+      "up": 0.1408,
+      "down": 0.0615,
+      "hidden_share": 0.8379,
+      "moved": 0.2023
+    }
+  }
+}

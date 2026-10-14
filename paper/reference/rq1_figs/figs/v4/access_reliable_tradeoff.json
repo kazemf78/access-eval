@@ -1,0 +1,347 @@
+{
+  "k_pair": 5,
+  "mu_window_pp": 2.0,
+  "big_pp": 2.0,
+  "n_boot": 2000,
+  "featured_bfcl": {
+    "pair": [
+      "GPT-5.4-Mini",
+      "Qwen-3 1.7B"
+    ],
+    "mu": [
+      0.6325,
+      0.6243333333333334
+    ],
+    "crossings": 1,
+    "k": {
+      "1": {
+        "access": [
+          0.6325,
+          0.6243333333333334
+        ],
+        "reliable": [
+          0.6325,
+          0.6243333333333334
+        ],
+        "d_access": 0.00816666666666667,
+        "d_access_CI": [
+          -0.030500000000000003,
+          0.04800416666666665
+        ],
+        "d_reliable": 0.008166666666666671,
+        "d_reliable_CI": [
+          -0.030499999999999996,
+          0.04800416666666665
+        ]
+      },
+      "2": {
+        "access": [
+          0.6707777777777778,
+          0.7032962962962963
+        ],
+        "reliable": [
+          0.5942222222222222,
+          0.5453703703703704
+        ],
+        "d_access": -0.03251851851851852,
+        "d_access_CI": [
+          -0.07200092592592594,
+          0.008565740740740686
+        ],
+        "d_reliable": 0.04885185185185185,
+        "d_reliable_CI": [
+          0.008514814814814817,
+          0.09015462962962958
+        ]
+      },
+      "3": {
+        "access": [
+          0.6858194444444444,
+          0.7364999999999999
+        ],
+        "reliable": [
+          0.5709861111111112,
+          0.49961111111111106
+        ],
+        "d_access": -0.050680555555555555,
+        "d_access_CI": [
+          -0.09044826388888888,
+          -0.010411805555555582
+        ],
+        "d_reliable": 0.07137500000000001,
+        "d_reliable_CI": [
+          0.030934722222222218,
+          0.11400277777777777
+        ]
+      },
+      "5": {
+        "access": [
+          0.7008862433862434,
+          0.7684986772486773
+        ],
+        "reliable": [
+          0.5399933862433862,
+          0.4439087301587302
+        ],
+        "d_access": -0.06761243386243386,
+        "d_access_CI": [
+          -0.10795667989417988,
+          -0.02819923941798946
+        ],
+        "d_reliable": 0.09608465608465608,
+        "d_reliable_CI": [
+          0.05490178571428571,
+          0.14032655423280418
+        ]
+      },
+      "10": {
+        "access": [
+          0.7166666666666667,
+          0.8
+        ],
+        "reliable": [
+          0.49166666666666664,
+          0.375
+        ],
+        "d_access": -0.08333333333333333,
+        "d_access_CI": [
+          -0.12333333333333334,
+          -0.041666666666666664
+        ],
+        "d_reliable": 0.11666666666666667,
+        "d_reliable_CI": [
+          0.07,
+          0.16333333333333333
+        ]
+      }
+    }
+  },
+  "per_benchmark": {
+    "TruthfulQA": {
+      "pairs": 15,
+      "opposite_order": 11
+    },
+    "GSM8K": {
+      "pairs": 44,
+      "opposite_order": 22
+    },
+    "MATH-500": {
+      "pairs": 18,
+      "opposite_order": 9
+    },
+    "MMLU": {
+      "pairs": 13,
+      "opposite_order": 11
+    },
+    "BFCL": {
+      "pairs": 28,
+      "opposite_order": 9
+    }
+  },
+  "pooled": {
+    "pairs": 118,
+    "opposite_order": 62,
+    "large": 11,
+    "large_both_significant": 8
+  },
+  "large_cases": [
+    {
+      "dataset": "TruthfulQA",
+      "higher_reliable": "Gemma-3 12B",
+      "higher_access": "Mistral 7B",
+      "d_mu": -0.008828809784223846,
+      "d_reliable": 0.03828051519134321,
+      "d_reliable_CI": [
+        0.0028064041997163053,
+        0.0770712125807667
+      ],
+      "d_access": -0.022186147186147184,
+      "d_access_CI": [
+        -0.053364399224271844,
+        0.011556218463065593
+      ],
+      "both_CI_exclude_0": false,
+      "crossings": 1
+    },
+    {
+      "dataset": "TruthfulQA",
+      "higher_reliable": "Gemma-3 4B",
+      "higher_access": "Qwen-3 4B",
+      "d_mu": 0.0016785231753384533,
+      "d_reliable": 0.04036076567923702,
+      "d_reliable_CI": [
+        0.009597108482458844,
+        0.07256280962491155
+      ],
+      "d_access": -0.03852675986433948,
+      "d_access_CI": [
+        -0.07585409179756314,
+        -0.001543299234382046
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 5
+    },
+    {
+      "dataset": "MATH-500",
+      "higher_reliable": "Qwen-2.5 7B",
+      "higher_access": "Qwen-3 1.7B",
+      "d_mu": 0.01547619047619031,
+      "d_reliable": 0.11270215633423182,
+      "d_reliable_CI": [
+        0.034496200209643606,
+        0.1874274670560048
+      ],
+      "d_access": -0.02023435160227613,
+      "d_access_CI": [
+        -0.06272929769392033,
+        0.018046196466007774
+      ],
+      "both_CI_exclude_0": false,
+      "crossings": 1
+    },
+    {
+      "dataset": "MMLU",
+      "higher_reliable": "Qwen-3 8B",
+      "higher_access": "Qwen-2.5 7B",
+      "d_mu": -0.012618296529968487,
+      "d_reliable": 0.05850983926693707,
+      "d_reliable_CI": [
+        0.02140228331080068,
+        0.09846965600120175
+      ],
+      "d_access": -0.03567673126032748,
+      "d_access_CI": [
+        -0.06444719843773468,
+        -0.007805693255220075
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    },
+    {
+      "dataset": "MMLU",
+      "higher_reliable": "Gemma-3 4B",
+      "higher_access": "LLaMA-3.1 8B",
+      "d_mu": -0.01644885083370895,
+      "d_reliable": 0.07826348204897102,
+      "d_reliable_CI": [
+        0.04145823944719846,
+        0.11664413399429172
+      ],
+      "d_access": -0.08607480847228483,
+      "d_access_CI": [
+        -0.1213008862851134,
+        -0.048514721345951625
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    },
+    {
+      "dataset": "MMLU",
+      "higher_reliable": "LLaMA-3 8B",
+      "higher_access": "LLaMA-3.1 8B",
+      "d_mu": -0.0006759801712482583,
+      "d_reliable": 0.09981973862100046,
+      "d_reliable_CI": [
+        0.06293375394321772,
+        0.13820226828901908
+      ],
+      "d_access": -0.09336037254018327,
+      "d_access_CI": [
+        -0.12768702118071204,
+        -0.057531545741324915
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    },
+    {
+      "dataset": "MMLU",
+      "higher_reliable": "Qwen-3 4B",
+      "higher_access": "Gemma-3 27B",
+      "d_mu": 0.01104100946372244,
+      "d_reliable": 0.10087126333183115,
+      "d_reliable_CI": [
+        0.05985992188673576,
+        0.1380501727504882
+      ],
+      "d_access": -0.033123028391167195,
+      "d_access_CI": [
+        -0.055661333934204596,
+        -0.01133956737269041
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    },
+    {
+      "dataset": "BFCL",
+      "higher_reliable": "GPT-3.5",
+      "higher_access": "Gemma-3 12B",
+      "d_mu": 0.0013333333333332975,
+      "d_reliable": 0.03903439153439153,
+      "d_reliable_CI": [
+        -0.0021638558201058193,
+        0.08068171296296296
+      ],
+      "d_access": -0.02968253968253968,
+      "d_access_CI": [
+        -0.06971494708994705,
+        0.01048313492063492
+      ],
+      "both_CI_exclude_0": false,
+      "crossings": 1
+    },
+    {
+      "dataset": "BFCL",
+      "higher_reliable": "LLaMA-3.1 8B",
+      "higher_access": "Qwen-3 0.6B",
+      "d_mu": 0.016666666666666552,
+      "d_reliable": 0.10742724867724868,
+      "d_reliable_CI": [
+        0.06613277116402116,
+        0.1499563492063492
+      ],
+      "d_access": -0.05376322751322751,
+      "d_access_CI": [
+        -0.09515261243386243,
+        -0.012591104497354505
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    },
+    {
+      "dataset": "BFCL",
+      "higher_reliable": "GPT-5.4-Mini",
+      "higher_access": "Qwen-3 1.7B",
+      "d_mu": 0.008166666666666544,
+      "d_reliable": 0.09608465608465608,
+      "d_reliable_CI": [
+        0.05312070105820113,
+        0.13685929232804234
+      ],
+      "d_access": -0.06761243386243386,
+      "d_access_CI": [
+        -0.10742443783068781,
+        -0.026034226190476187
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    },
+    {
+      "dataset": "BFCL",
+      "higher_reliable": "GPT-5.4-Mini",
+      "higher_access": "Gemma-3 4B",
+      "d_mu": 0.009166666666666656,
+      "d_reliable": 0.0787367724867725,
+      "d_reliable_CI": [
+        0.03929017857142859,
+        0.11760681216931217
+      ],
+      "d_access": -0.054398148148148154,
+      "d_access_CI": [
+        -0.08928108465608464,
+        -0.019761904761904762
+      ],
+      "both_CI_exclude_0": true,
+      "crossings": 1
+    }
+  ]
+}

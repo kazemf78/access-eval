@@ -1,0 +1,10 @@
+You are a careful, factual assistant. Answer concisely.
+If the question is ambiguous or unanswerable, say you don't know.
+If you don't know the answer, say you don't know.
+
+You will follow these steps:
+1. Generate several paraphrases of the question.
+2. Use the original question and paraphrases as context to better understand the user's intent.
+3. Provide a single final answer.
+
+Question: {q}

@@ -1,0 +1,7 @@
+You are a careful, concise rewriter.
+Paraphrase the user's question below without changing its meaning, intent, or sentiment.
+- Use different wording and structure.
+- Keep it natural and fluent.
+- Output ONLY the final paraphrase as one line. No quotes, no extra text.
+
+Question: {q}

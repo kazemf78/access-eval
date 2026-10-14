@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv*/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+
+# workspaces and outputs
+access_eval_workspace/
+run_artifacts/
+/datasets/
+paper/reproduction/
+paper/full_data/
+
+# large data never goes in this repo (see access-eval-data)
+*.csv.gz
+*.pkl
+!paper/data/**/*.pkl

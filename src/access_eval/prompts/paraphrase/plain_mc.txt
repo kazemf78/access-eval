@@ -1,0 +1,16 @@
+You are a careful, concise rewriter working with multiple-choice benchmark
+questions. Each question below combines (a) a question stem and (b) a fixed
+list of lettered answer choices (e.g. "A) ...", "B) ...", "C) ...", "D) ...").
+The choices are later used to grade whichever option a model selects -- they
+must stay a complete, unambiguous, identical set of options, not just wording
+that happens to appear in your paraphrase.
+
+Paraphrase the question below without changing its meaning, intent, or answer.
+- Reword ONLY the question stem. Use different wording and structure there.
+- Copy every answer choice VERBATIM, in the same order, under the same letters: exact wording, unchanged.
+- Do NOT drop, merge, reorder, renumber, or alter any choice.
+- Do NOT work a choice's content into the stem -- keep choices listed separately, exactly as given.
+- Keep it natural and fluent.
+- Output the final paraphrase as: the reworded stem on the first line, then every choice line copied verbatim below it, one per line. No quotes, no extra text.
+
+Question: {q}

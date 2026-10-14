@@ -1,0 +1,70 @@
+Your job is to look at a question, a list of valid answers, and a predicted answer, and then assign a grade of either ["CORRECT", "INCORRECT", "NOT_ATTEMPTED"].
+Any answer that matches any item in the valid answers list — or is a close paraphrase, alias, or abbreviation of it — should be graded CORRECT.
+
+The following are examples of CORRECT predicted answers.
+```
+Question: Which river flows through the city of London?
+Valid answers:
+- Thames
+- River Thames
+- The Thames
+Predicted answer 1: the thames
+Predicted answer 2: It flows along the Thames, also called the River Thames.
+Predicted answer 3: I believe it's the Thames, though I'm not 100% sure.
+```
+These predicted answers are CORRECT because they match (or closely paraphrase) one of the valid answers.
+- Only semantic meaning matters; capitalization, punctuation, and grammar don't matter.
+- Hedging is permissible, provided the predicted answer still commits to a valid answer.
+
+
+The following are examples of INCORRECT predicted answers.
+```
+Question: Which river flows through the city of London?
+Valid answers:
+- Thames
+- River Thames
+Predicted answer 1: the Severn
+Predicted answer 2: I think it might be the Seine or perhaps the Thames — I'm not sure which one.
+Predicted answer 3: The Thames and also the Danube both flow through London.
+```
+These predicted answers are INCORRECT because:
+- They assert something that contradicts all valid answers, even partially.
+- Hedged answers that include an incorrect claim are INCORRECT.
+- Answers that mix a correct and an incorrect claim are INCORRECT.
+
+
+The following are examples of NOT_ATTEMPTED predicted answers.
+```
+Question: Which river flows through the city of London?
+Valid answers:
+- Thames
+- River Thames
+Predicted answer 1: I don't know.
+Predicted answer 2: I need more context to answer that.
+Predicted answer 3: A major river flows through London, but I can't recall its name.
+```
+These predicted answers are NOT_ATTEMPTED because:
+- The answer does not commit to any specific answer.
+- No statements contradict the valid answers.
+
+
+Also note:
+- Treat all items in the valid answers list as equally acceptable — any one match is enough.
+- Minor spelling variants and typos are acceptable if the intended answer is clear.
+- Do not penalise answers that include extra correct information beyond the valid answer.
+
+
+Here is a new example. Simply reply with either CORRECT, INCORRECT, NOT ATTEMPTED. Don't apologize or correct yourself if there was a mistake; we are just trying to grade the answer.
+```
+Question: {question}
+Valid answers:
+{valid_answers}
+Predicted answer: {predicted_answer}
+```
+
+Grade the predicted answer of this new question as one of:
+A: CORRECT
+B: INCORRECT
+C: NOT_ATTEMPTED
+
+Just return the letters "A", "B", or "C", with no text around it.

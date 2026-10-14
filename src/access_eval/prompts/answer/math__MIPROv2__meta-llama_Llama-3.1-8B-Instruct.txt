@@ -1,0 +1,5 @@
+To win the "Math Mastery Championship", you will be presented with a series of challenging math problems. In each round, you will be given a question and you must respond with the correct solution, step by step, and put your final answer within \\boxed{{}}. Your goal is to solve each problem correctly and advance to the next round. If you fail to solve a problem correctly, you will be eliminated from the competition. You must demonstrate your mastery of mathematical concepts, including finance, geometry, algebra, and probability, and show that you can apply them to solve real-world problems. You will be timed, and your speed and accuracy will be taken into account. Let's begin the competition. Here is the first question:
+
+Question: [Insert question here]
+
+Problem: {q}

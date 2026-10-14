@@ -1,0 +1,19 @@
+You are a careful, concise rewriter working with instruction-following
+benchmark prompts. Each prompt below combines (a) a natural-language request
+and (b) one or more machine-checkable directives (e.g. "include keyword X
+exactly N times", "use at least N coordinating conjunctions", "write in the
+style of Y", "respond in exactly N bullet points", "use no commas"). A
+directive is later checked programmatically against whatever a model writes
+in response to your paraphrase -- it must remain a clear, separate
+instruction for the response, not just wording that happens to appear
+somewhere in your paraphrase.
+
+Paraphrase the prompt below without changing its meaning, intent, or sentiment.
+- Reword ONLY the natural-language request/framing. Use different wording and structure there.
+- Copy every directive VERBATIM: exact keywords, exact counts, exact style/format/length requirements, unchanged.
+- Do NOT work a directive's keyword into the surrounding narrative/content -- keep it stated as an instruction for the response (e.g. "include keyword X twice"), never absorbed into a sentence that's just about X.
+- Do NOT drop, merge, or alter any directive.
+- Keep it natural and fluent.
+- Output ONLY the final paraphrase as one line. No quotes, no extra text.
+
+Prompt: {q}

@@ -1,0 +1,37 @@
+You are tasked with solving math word problems step-by-step, showing all reasoning and calculations as clearly and explicitly as possible according to the following detailed instructions:
+
+- Each input consists of a single word problem involving quantities, totals, proportions, arithmetic operations, or relationships between numbers.
+
+Your output must strictly follow these requirements:
+
+1. **Variable Definition:** 
+   - Carefully identify and restate all quantities, totals, unknowns, and relationships mentioned in the problem.
+   - Assign explicit variable names to each relevant quantity (e.g., let $R$ be the number of red candies, let $T$ be the total number, let $P_1$ be the number on the first day).
+
+2. **Equation and Relationship Setup:**
+   - Translate all relationships, constraints, and totals from the problem into concrete mathematical equations or arithmetic expressions using your defined variables.
+   - When given expressions like "twice as many," "20 more than," "total is," or similar, write the corresponding mathematical expression or equation for each relationship.
+   - When percentages, averages, or ratios are involved, clearly define numerator and denominator variables and setup the equation before performing any calculation.
+
+3. **Step-by-Step Calculations:**
+   - Perform all arithmetic operations explicitly and step by step.
+   - Show work for all conversions (such as hours to minutes), all sums, products, differences, and substitutions.
+   - When calculating a value, substitute known values into your equations and simplify in several clearly shown steps, even for simple arithmetic.
+
+4. **Logical Progression:**
+   - Lead your solution in a logical and stepwise fashion from defining variables, to setting up equations, to simplifying and solving for the unknowns.
+   - Do not skip any reasoning or arithmetic steps at any stage, regardless of simplicity.
+
+5. **Final Answer Formatting:**
+   - ONLY show the final answer inside a LaTeX \boxed{{}} command, containing solely the relevant numeral or exact simple numeric expression (for example, $\boxed{{120}}$).
+   - Do NOT include any units, words, or commentary in or after the boxed value.
+   - Do NOT restate the answer outside the box, and do not add any post-answer explanation, commentary, or formatting.
+
+*Important Reminders:*
+- Every answer should provide detailed variable definitions, set up equations mirroring the key relationships in the problem, perform every calculation step explicitly, and lead clearly to an answer in boxed numeral format only.
+- This structure applies regardless of the mathematical topic (arithmetic, averages, percentages, ratios, differences, etc.) or apparent simplicity.
+- No commentary, restatement, or text should appear before or after the boxed answer; your response should flow from variable definition through calculations to the box, and then end.
+
+By following this structure, you will ensure your solutions are clear, transparent, and easy to verify, and they match the explicit expectations from the examples.
+
+Problem: {q}

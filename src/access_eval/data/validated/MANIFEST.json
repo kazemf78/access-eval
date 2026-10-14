@@ -1,0 +1,61 @@
+{
+ "formulations": {
+  "SimpleQA": {
+   "file": "formulations/SimpleQA.csv",
+   "inquiries": 618,
+   "paraphrases": 5052,
+   "min_per_inquiry": 5,
+   "sha256": "67e7753a0f4d0eca9b7fa0302a401ef9577c9e13036480518f7da66c286b6bcd"
+  },
+  "TruthfulQA": {
+   "file": "formulations/TruthfulQA.csv",
+   "inquiries": 471,
+   "paraphrases": 3962,
+   "min_per_inquiry": 5,
+   "sha256": "434b7e758e2378a34937988195772467de8114068eb7f0df995a75f0ec90c13d"
+  },
+  "gsm8k_test": {
+   "file": "formulations/gsm8k_test.csv",
+   "inquiries": 902,
+   "paraphrases": 6596,
+   "min_per_inquiry": 5,
+   "sha256": "8ae712c42fb6ddffcf9018e4ba78c468cc59693b94269cac8ebc5a79965f94a0"
+  },
+  "math_500_test": {
+   "file": "formulations/math_500_test.csv",
+   "inquiries": 106,
+   "paraphrases": 827,
+   "min_per_inquiry": 5,
+   "sha256": "4379267afbbdc67780f31e77a4b2bf526dee52e847af6a6e77306115426cb2da"
+  },
+  "mmlu": {
+   "file": "formulations/mmlu.csv",
+   "inquiries": 634,
+   "paraphrases": 4438,
+   "min_per_inquiry": 7,
+   "sha256": "f0c2c65566ca92cf6544a56431edf52f809ae4c2266f99e2e41efe663f9f8b8c"
+  }
+ },
+ "datasets": {
+  "SimpleQA": {
+   "file": "datasets/simple_qa_test_set.csv",
+   "sha256": "feee3f7e7db3617e94e8fcf1977b756ec420ef8568f4e0fcbbe0e92e9d5fc032"
+  },
+  "TruthfulQA": {
+   "file": "datasets/TruthfulQA.csv",
+   "sha256": "f9bd9e859cc102cb1f647f1064da7e009be752c416845cf9fa56e6eaae403a7d"
+  },
+  "gsm8k_test": {
+   "file": "datasets/openai_gsm8k_main_test.csv",
+   "sha256": "0e9aff6abe3e6aa13f0f54b92bef03eb4137a4801d49f0f81eeea4c9c5d51699"
+  },
+  "math_500_test": {
+   "file": "datasets/HuggingFaceH4_MATH_500_test.csv",
+   "sha256": "57f4e73f679fc11a83bf8f7414a97704d1af0c6eb16d3cc1ad0d5a07d4ee0e6d"
+  },
+  "mmlu": {
+   "file": "datasets/ConStat_mmlu_test_combined.csv",
+   "sha256": "8a81bb0a0e2f492fadc12359450d79779af14a54c7636d55f8646c398b9bd74b"
+  }
+ }
+}

@@ -1,0 +1,27 @@
+You are given a real-life word problem that involves basic arithmetic or algebra, such as calculating totals, differences, quantities, or costs. Your task is to provide a detailed, accurate, and clear solution to the problem, showing all steps and reasoning in natural language. The expected output structure is as follows:
+
+1. Step-by-step reasoning: Write out your logical approach and calculations in plain English, showing each step you take to arrive at the answer. If needed, define variables, substitute values, perform stepwise arithmetic operations, and clearly explain how each step follows from the last.
+
+2. Final answer: Write the answer on a new line, formatted as \boxed{{your_numeric_answer}}, using LaTeX. Only the numeric value should appear inside the box—do not include units, symbols, words, or additional formatting inside the braces.
+
+Detailed rules:
+
+- Only use arithmetic (addition, subtraction, multiplication, division) or basic algebra (solving for unknowns) as needed by the problem.
+- If the problem gives a value in terms like "X less/more than Y", perform the appropriate arithmetic (e.g., "5 less than 23" means 23 - 5 = 18).
+- If you introduce variables for unknown quantities in your calculations, always solve for the variable and substitute its value into the final answer before boxing it.
+- Do not place units (such as "hours", "miles", "dollars"), symbols, or any explanatory text inside the box.
+- Double-check your arithmetic and logic so the boxed answer matches the solution process.
+- The boxed answer must always be a pure numeric value (integer or decimal).
+
+Formatting:
+
+- Present your reasoning and calculations first.
+- The final answer must appear on a new line, in the format: \boxed{{numeric_answer}}
+
+Examples:
+- Correct: \boxed{{105}}
+- Incorrect: \boxed{{105 miles}}, \boxed{{$105}}, \boxed{{105.0}}, \boxed{{ one hundred five }}
+
+Strictly follow this structure and formatting for every question of this type.
+
+Problem: {q}

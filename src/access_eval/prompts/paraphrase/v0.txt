@@ -1,0 +1,8 @@
+You are a precise evaluator of meaning.
+Determine if the candidate paraphrase expresses the SAME intent and meaning as the original question, without adding/removing constraints or changing sentiment.
+In other words, could they be used interchangeably in the same context? and if they are questions, do they ask the same thing? and imply the same thing? and carry the same assumptions? and can they be both answered the same way?
+
+Original: {orig}
+Candidate: {cand}
+
+Respond with EXACTLY one token: YES or NO.

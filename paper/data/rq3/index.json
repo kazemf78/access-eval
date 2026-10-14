@@ -1,0 +1,193 @@
+{
+ "cot_TruthfulQA": {
+  "models": [
+   "Qwen/Qwen2.5-7B-Instruct",
+   "Qwen/Qwen3-0.6B",
+   "Qwen/Qwen3-0.6B[with_thinking]",
+   "Qwen/Qwen3-1.7B",
+   "Qwen/Qwen3-1.7B[with_thinking]",
+   "Qwen/Qwen3-14B",
+   "Qwen/Qwen3-14B[with_thinking]",
+   "Qwen/Qwen3-32B",
+   "Qwen/Qwen3-32B[with_thinking]",
+   "Qwen/Qwen3-4B",
+   "Qwen/Qwen3-4B[with_thinking]",
+   "Qwen/Qwen3-8B",
+   "Qwen/Qwen3-8B[with_thinking]",
+   "google/gemma-3-12b-it",
+   "google/gemma-3-1b-it",
+   "google/gemma-3-27b-it",
+   "google/gemma-3-4b-it",
+   "gpt-3.5-turbo",
+   "gpt-4.1",
+   "gpt-4.1-mini",
+   "gpt-4.1-nano",
+   "gpt-4o",
+   "gpt-5.4-mini",
+   "meta-llama/Llama-3.1-8B-Instruct",
+   "meta-llama/Meta-Llama-3-8B-Instruct",
+   "mistralai/Mistral-7B-Instruct-v0.2",
+   "rasyosef/Phi-1_5-Instruct-v0.1"
+  ]
+ },
+ "popt_gsm8k_test__gpt-4.1-mini__GEPA": {
+  "dataset": "gsm8k_test",
+  "model": "gpt-4.1-mini",
+  "method": "GEPA",
+  "tag_a": "gpt-4.1-mini__orig",
+  "tag_b": "gpt-4.1-mini__GEPA",
+  "collapse": false
+ },
+ "popt_gsm8k_test__gpt-4.1-mini__MIPROv2": {
+  "dataset": "gsm8k_test",
+  "model": "gpt-4.1-mini",
+  "method": "MIPROv2",
+  "tag_a": "gpt-4.1-mini__orig",
+  "tag_b": "gpt-4.1-mini__MIPROv2",
+  "collapse": false
+ },
+ "popt_gsm8k_test__gpt-5.4-mini__GEPA": {
+  "dataset": "gsm8k_test",
+  "model": "gpt-5.4-mini",
+  "method": "GEPA",
+  "tag_a": "gpt-5.4-mini__orig",
+  "tag_b": "gpt-5.4-mini__GEPA",
+  "collapse": false
+ },
+ "popt_gsm8k_test__gpt-5.4-mini__MIPROv2": {
+  "dataset": "gsm8k_test",
+  "model": "gpt-5.4-mini",
+  "method": "MIPROv2",
+  "tag_a": "gpt-5.4-mini__orig",
+  "tag_b": "gpt-5.4-mini__MIPROv2",
+  "collapse": false
+ },
+ "popt_gsm8k_test__google_gemma-3-4b-it__GEPA": {
+  "dataset": "gsm8k_test",
+  "model": "google/gemma-3-4b-it",
+  "method": "GEPA",
+  "tag_a": "google/gemma-3-4b-it__orig",
+  "tag_b": "google/gemma-3-4b-it__GEPA",
+  "collapse": false
+ },
+ "popt_gsm8k_test__google_gemma-3-4b-it__MIPROv2": {
+  "dataset": "gsm8k_test",
+  "model": "google/gemma-3-4b-it",
+  "method": "MIPROv2",
+  "tag_a": "google/gemma-3-4b-it__orig",
+  "tag_b": "google/gemma-3-4b-it__MIPROv2",
+  "collapse": false
+ },
+ "popt_gsm8k_test__meta-llama_Llama-3.1-8B-Instruct__GEPA": {
+  "dataset": "gsm8k_test",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "method": "GEPA",
+  "tag_a": "meta-llama/Llama-3.1-8B-Instruct__orig",
+  "tag_b": "meta-llama/Llama-3.1-8B-Instruct__GEPA",
+  "collapse": false
+ },
+ "popt_gsm8k_test__meta-llama_Llama-3.1-8B-Instruct__MIPROv2": {
+  "dataset": "gsm8k_test",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "method": "MIPROv2",
+  "tag_a": "meta-llama/Llama-3.1-8B-Instruct__orig",
+  "tag_b": "meta-llama/Llama-3.1-8B-Instruct__MIPROv2",
+  "collapse": false
+ },
+ "popt_gsm8k_test__Qwen_Qwen3-8B__GEPA": {
+  "dataset": "gsm8k_test",
+  "model": "Qwen/Qwen3-8B",
+  "method": "GEPA",
+  "tag_a": "Qwen/Qwen3-8B__orig",
+  "tag_b": "Qwen/Qwen3-8B__GEPA",
+  "collapse": false
+ },
+ "popt_gsm8k_test__Qwen_Qwen3-8B__MIPROv2": {
+  "dataset": "gsm8k_test",
+  "model": "Qwen/Qwen3-8B",
+  "method": "MIPROv2",
+  "tag_a": "Qwen/Qwen3-8B__orig",
+  "tag_b": "Qwen/Qwen3-8B__MIPROv2",
+  "collapse": false
+ },
+ "popt_TruthfulQA__gpt-4.1-mini__GEPA": {
+  "dataset": "TruthfulQA",
+  "model": "gpt-4.1-mini",
+  "method": "GEPA",
+  "tag_a": "gpt-4.1-mini__orig",
+  "tag_b": "gpt-4.1-mini__GEPA",
+  "collapse": true
+ },
+ "popt_TruthfulQA__gpt-4.1-mini__MIPROv2": {
+  "dataset": "TruthfulQA",
+  "model": "gpt-4.1-mini",
+  "method": "MIPROv2",
+  "tag_a": "gpt-4.1-mini__orig",
+  "tag_b": "gpt-4.1-mini__MIPROv2",
+  "collapse": true
+ },
+ "popt_TruthfulQA__gpt-5.4-mini__GEPA": {
+  "dataset": "TruthfulQA",
+  "model": "gpt-5.4-mini",
+  "method": "GEPA",
+  "tag_a": "gpt-5.4-mini__orig",
+  "tag_b": "gpt-5.4-mini__GEPA",
+  "collapse": true
+ },
+ "popt_TruthfulQA__gpt-5.4-mini__MIPROv2": {
+  "dataset": "TruthfulQA",
+  "model": "gpt-5.4-mini",
+  "method": "MIPROv2",
+  "tag_a": "gpt-5.4-mini__orig",
+  "tag_b": "gpt-5.4-mini__MIPROv2",
+  "collapse": true
+ },
+ "popt_TruthfulQA__google_gemma-3-4b-it__GEPA": {
+  "dataset": "TruthfulQA",
+  "model": "google/gemma-3-4b-it",
+  "method": "GEPA",
+  "tag_a": "google/gemma-3-4b-it__orig",
+  "tag_b": "google/gemma-3-4b-it__GEPA",
+  "collapse": true
+ },
+ "popt_TruthfulQA__google_gemma-3-4b-it__MIPROv2": {
+  "dataset": "TruthfulQA",
+  "model": "google/gemma-3-4b-it",
+  "method": "MIPROv2",
+  "tag_a": "google/gemma-3-4b-it__orig",
+  "tag_b": "google/gemma-3-4b-it__MIPROv2",
+  "collapse": true
+ },
+ "popt_TruthfulQA__meta-llama_Llama-3.1-8B-Instruct__GEPA": {
+  "dataset": "TruthfulQA",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "method": "GEPA",
+  "tag_a": "meta-llama/Llama-3.1-8B-Instruct__orig",
+  "tag_b": "meta-llama/Llama-3.1-8B-Instruct__GEPA",
+  "collapse": true
+ },
+ "popt_TruthfulQA__meta-llama_Llama-3.1-8B-Instruct__MIPROv2": {
+  "dataset": "TruthfulQA",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "method": "MIPROv2",
+  "tag_a": "meta-llama/Llama-3.1-8B-Instruct__orig",
+  "tag_b": "meta-llama/Llama-3.1-8B-Instruct__MIPROv2",
+  "collapse": true
+ },
+ "popt_TruthfulQA__Qwen_Qwen3-8B__GEPA": {
+  "dataset": "TruthfulQA",
+  "model": "Qwen/Qwen3-8B",
+  "method": "GEPA",
+  "tag_a": "Qwen/Qwen3-8B__orig",
+  "tag_b": "Qwen/Qwen3-8B__GEPA",
+  "collapse": true
+ },
+ "popt_TruthfulQA__Qwen_Qwen3-8B__MIPROv2": {
+  "dataset": "TruthfulQA",
+  "model": "Qwen/Qwen3-8B",
+  "method": "MIPROv2",
+  "tag_a": "Qwen/Qwen3-8B__orig",
+  "tag_b": "Qwen/Qwen3-8B__MIPROv2",
+  "collapse": true
+ }
+}

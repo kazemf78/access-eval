@@ -1,0 +1,13 @@
+# Exact versions used to produce the paper's figures and numbers (Python 3.11). Figures are compared pixel by pixel,
+# so other matplotlib/numpy versions may show tiny rendering differences; all data checks are version-tolerant.
+numpy==2.2.6
+pandas==3.0.2
+pyarrow==23.0.1
+scipy==1.17.1
+matplotlib==3.10.8
+pillow==12.2.0
+sympy==1.14.0
+math-verify==0.9.0
+fonttools==4.62.1
+kiwisolver==1.5.0
+contourpy==1.3.3
